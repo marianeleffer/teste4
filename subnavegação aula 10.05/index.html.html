@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub navegação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    h1 {
+     display: block;
+     background-color: rgb(185, 19, 163);
+     text-align: center;
+     border-style: solid;
+     border-width: 3pt;
+     border-color: rgb(231, 13, 166);
+     color: rgb(233, 221, 227);
+    }
+
+    h3 {
+      display: block;
+      background-color: white;
+    }
+
+    hr {
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(216, 176, 201);
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #e43fc8e1; 
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .subnav {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .subnav .subnavbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .subnav:hover .subnavbtn {
+      background-color: rgb(255, 0, 170);
+    }
+    
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: rgb(255, 0, 55);
+      width: 100%;
+      z-index: 1;
+    }
+    
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .subnav-content a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    button {
+      display: inline-block;
+      background-color: rgba(255, 127, 255, 0.795);
+      border-style: solid;
+      border-color: rgb(224, 18, 207);
+      border-radius: 5px;
+      
+    }
+    </style>
+
+    <body>
+    <h1>Utilizando menu de subnavegação</h1>
+    <hr>
+    <p style="display: block; border-style: solid; border-width: 2pt; border-color: rgba(255, 0, 98, 0.836); background-color: rgb(255, 127, 227); color: rgb(41, 30, 32); position: relative; text-align: center; padding: 10px; margin: auto;">Passe o mouse sobre o ítem do menu para ver submenus
+    </p>
+    <hr>
+    <div class="navbar">
+      <a href="#Home">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Mundo dos Felinos <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Curiosidades">História</a>
+          <a href="#Colaboradores">Curiosidades</a>
+          <a href="#Fornecedores">Raças</a>
+        </div>
+      </div> 
+      <div class="subnav">
+        <button class="subnavbtn">Serviços <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Petshop">Petshop</a>
+          <a href="#Veterinário">Veterinário</a>
+          <a href="#Vacinas">Vacinas</a>
+          <a href="#Concurso de Raças">Concurso de Raças</a>
+        </div>
+      </div> 
+      <div class="subnav">
+        <button class="subnavbtn">Parceiros <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="https:https://wcf.de/en/wcf-actual/" target="_blank">World Cat Federation</a>
+          <a href="https:/https://www.clubebrasileirodogato.com.br/boas-vindas" target="_blank">Clube Brasileiro do Gato</a>
+          <a href="https:/https://www.cfelinosbrasil.org/" target="_blank">Confederação de Felinos do Brasil</a>
+          <a href="https://https://www.fifebrasil.com.br/" target="_blank">Federação Felina Brasileira</a>
+        </div>
+      </div>
+      <a href="#contato">Contato</a>
+    </div>
+    <h3>-  </h3>
+    <div style="padding:0 16px">
+      <h3>A barra de navegação acima pode ser usada para acessar links</h3>
+      <p>Também é possível acessar formulários</p>
+    </div>
+    <h1>A seguir é mostrado a utilização de um botão clicável</h1>
+    <button type="button" onclick="alert('Bem vindo!')">Click aqui!</button>
+
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSKFqzx9DEsAnj_6I0hnQ27leHDUPlPTSXMKEkXa5IspN2CA/viewform?usp=pp_url" target="_blank"><button>Cadastro</button></a>
+
+    </body>
+</html>
